@@ -58,9 +58,16 @@
 
 	<build>
 		<plugins>
-		 <!-- added by me check it !!!! -->
-	
-   <!-- added by me check it !!!!-->
+		<!--  to solve Failed to execute goal org.apache.maven.plugins:maven-resources-plugin:3.2.0:resources -->
+		<plugin>
+		<groupId>org.apache.maven.plugins</groupId>
+		<artifactId>maven-resources-plugin</artifactId>
+		<version>3.1.0</version>
+		</plugin>
+		
+		<!-- to solve Failed to execute goal org.apache.maven.plugins:maven-resources-plugin:3.2.0:resources  -->
+		
+
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
