@@ -55,6 +55,16 @@
 		</dependency>
 
 	</dependencies>
+	<!-- hne bech tzid lel nexsus	 -->
+	<distributionManagement>
+	<repository>
+	<id>nexus-user-credentials</id>
+	<name>Nexus Repository</name>
+	<url>http://192.168.1.104:8081/repository/maven-releases/</url><!--badel el url	 -->
+	</repository>
+	</distributionManagement>
+	
+
 
 	<build>
 		  <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
